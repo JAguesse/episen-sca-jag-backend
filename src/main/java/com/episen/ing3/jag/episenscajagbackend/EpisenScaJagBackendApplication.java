@@ -17,7 +17,7 @@ public class EpisenScaJagBackendApplication {
 	public static Writer write; 
 
 	public static void main(String[] args) throws IOException {
-		file = new File("order.txt"); 
+		file = new File("/usr/local/orders.txt"); // path du volume
 		write = new FileWriter(EpisenScaJagBackendApplication.file.getPath());
 		
 		if(!file.exists()) {
